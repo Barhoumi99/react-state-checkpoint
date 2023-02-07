@@ -21,9 +21,9 @@ class App extends Component {
   render() {
     return(
       <div>
-        <button onClick={this.handleClick}>Show/Hide</button>
+        <button className = 'btn' onClick={this.handleClick}>Show/Hide</button>
         {this.state.displayed && 
-          <div>
+          <div className='card'>
             <img src={this.state.imgSrc} width = '300px' alt = 'avatar illustration' />
             <h2>{this.state.fullName}</h2>
             <h4>{this.state.profession}</h4>
